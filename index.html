@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+<link rel="stylesheet" href="style.css">
+<style>
+   @media (max-width:650px){
+            header li a{
+                font-size: 15px;
+                top: 15%;
+            }
+        }
+        @media (max-width:650px){
+            .text h1{
+                font-size: 25px;
+            }
+        }
+        @media (max-width:650px){
+            .text h2{
+                font-size: 25px;
+               
+            }
+        }
+  .cardwrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly
+  }
+  .card{
+    border: solid 2px black;
+width: 10%;
+height: 150px;
+  }
+  .card {
+      width: 250px;
+      height: 300px;
+      box-shadow: 0 1px 40px rgba(0, 0, 0, 0.4);
+      border-radius: 1px;
+      position: relative;
+    }
+    .im {
+      width: 100%;
+      height: 100%;
+      background-color: #363636;
+      border-radius: 10px;
+    }
+    .im img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0.9;
+      border-radius: 0.7rem;
+      transition: opacity 0.3s;
+    }
+.im img:hover{
+  width: 102%;
+  height: 102%;
+  box-shadow: 10px 10px 40px rgb(192, 62, 62);
+}
+
+.top{
+  
+  position: sticky;
+  right: 10%;
+  width: 32px;
+}
+
+/*footer*/
+
+footer{
+  width: 100%;
+  height: 10rem;
+  background-color: #17181b;
+  color: whitesmoke;
+}
+footer ul {
+  display: flex;
+  justify-content: space-evenly;
+position: relative;
+}
+
+</style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+<div class="slideshow-container">
+
+<div class="mySlides fade" id="top">
+  
+  <img src="slider-01.jpg" style="width:100%">
+  <div class="text"> <h1>People's Restaurant</h1>
+    <h2>Eat.Drink.Love</h2>
+  </div>
+</div>
+
+<div class="mySlides fade">
+
+  <img src="slider-02.jpg" style="width:100%">
+  <div class="text"> <h1>People's Restaurant</h1>
+    <h2>Eat.Drink.Love</h2> </div>
+</div>
+
+<div class="mySlides fade">
+  
+  <img src="slider-03.jpg" style="width:100%">
+  <div class="text"><h1>People's Restaurant</h1>
+    <h2>Eat.Drink.Love</h2> </div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<!--Gallery-->
+<section class="gallery">
+<center><h1>Gallery</h1></center>
+<!--row1-->
+<div class="cardwrapper">
+<div class="card">
+<div class="im">
+<img src="1.jpg" alt="">
+</div>
+</div>
+
+<div class="card">
+  <div class="im">
+    <img src="2.jpg" alt="">
+  </div>
+</div>
+
+<div class="card">
+  <div class="im">
+    <img src="3.jpg" alt="">
+  </div>
+</div>
+
+<div class="card">
+  <div class="im">
+    <img src="4.jpg" alt="">
+  </div>
+</div>
+
+</div>
+
+<br><br>
+<!--row2-->
+
+<div class="cardwrapper">
+  <div class="card">
+    <div class="im">
+      <img src="5.jpg" alt="">
+    </div>
+  </div>
+  
+  <div class="card">
+    <div class="im">
+      <img src="6.jpg" alt="">
+    </div>
+  </div>
+  
+  <div class="card">
+    <div class="im">
+      <img src="7.jpg" alt="">
+    </div>
+  </div>
+  
+  <div class="card">
+    <div class="im">
+      <img src="8.jpg" alt="">
+    </div>
+  </div>
+  
+  </div>
+
+</section>
+<br><br>
+<div class="top">
+  <a href="#top"><i class="fas fa-upload fa-2x"></i></a>
+</div>
+<footer>
+<center>copyright &copy; People's Restaurant 2021</center>
+<br><br>
+<ul>
+  <li style="list-style: none;"><a href=""><i class="fab fa-facebook-f fa-2x "></i></a></li>
+  <li style="list-style: none;"><a href=""><i class="fab fa-instagram fa-2x"></i></a></li>
+  <li style="list-style: none;"><a href=""><i class="fab fa-twitter fa-2x"></i></a></li>
+  <li style="list-style: none;"><a href=""><i class="fab fa-telegram-plane fa-2x"></i></a></li>
+  <li style="list-style: none;"><a href=""><i class="fab fa-google-plus-g fa-2x"></i></a></li>
+</ul>
+
+</footer>
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+
+
+
+</body>
+</html> 

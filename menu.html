@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+      .allcontainer{
+        display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-left: 5%;
+      }
+      @media (max-width:650px)
+      {
+        .allcontainer{
+          display: flex;
+    flex-direction: column;
+        }
+      }
+  .container {
+  position: relative;
+  width: 30%;
+}
+@media (max-width:650px)
+      {
+        .container{
+          width: 50%;
+  height: auto;
+align-items: center;
+        }
+      }
+.image {
+  display: block;
+  width: 50%;
+  height: auto;
+  border-radius: 10px;
+  height: 100%;
+}
+@media (max-width:650px)
+      {
+        .img{
+          width: 50%;
+  height: auto;
+        }
+      }
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #008CBA;
+  overflow: hidden;
+  width: 50%;
+  height: 100%;
+ opacity: 0.8;
+  height: 0;
+  transition: .5s ease;
+  border-radius: 10px;
+}
+
+.container:hover .overlay {
+  height: 100%;
+  box-shadow: 1px 1px 4px 4px rgb(241, 132, 132);
+}
+
+.text {
+  color: whitesmoke;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+@media (max-width:650px){
+  .text{
+    font-size: 10px;
+  }
+}
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+<center><h1>MENU</h1></center>
+   <br><br>
+<!--drinks-->
+   <center><h1>Drinks</h1></center><br>
+    <div class="allcontainer">
+      <div class="container">
+        <img src="drink.jpg" alt="Avatar" class="image">
+        <div class="overlay">
+          <div class="text">
+              <h3>Drink-1</h3>
+              <h3>Price:50$</h3>
+          </div>
+        </div>
+      </div>  
+
+<br><br>
+      <div class="container">
+        <img src="img-01.jpg" alt="Avatar" class="image">
+        <div class="overlay">
+          <div class="text">
+              <h3>Drink-2</h3>
+              <h3>Price:50$</h3>
+          </div>
+        </div>
+      </div> 
+      <br><br> 
+
+      <div class="container">
+        <img src="img-02.jpg" alt="Avatar" class="image">
+        <div class="overlay">
+          <div class="text">
+              <h3>Drink-3</h3>
+              <h3>Price:50$</h3>
+          </div>
+        </div>
+      </div> 
+      <br><br> 
+
+      <div class="container">
+        <img src="img-03.jpg" alt="Avatar" class="image">
+        <div class="overlay">
+          <div class="text">
+              <h3>Drink-4</h3>
+              <h3>Price:50$</h3>
+          </div>
+        </div>
+      </div> 
+      <br><br> 
+    </div> 
+
+<br><br>
+<!--lunch-->
+    <center><h1>Lunch items</h1></center><br>
+    <div class="allcontainer">
+      <div class="container">
+        <img src="lunch.jpg" alt="Avatar" class="image">
+        <div class="overlay">
+          <div class="text">
+              <h3>Item-1</h3>
+              <h3>Price:50$</h3>
+          </div>
+        </div>
+      </div>  
+
+<br><br>
+      <div class="container">
+        <img src="img-04.jpg" alt="Avatar" class="image">
+        <div class="overlay">
+          <div class="text">
+              <h3>Item-2</h3>
+              <h3>Price:50$</h3>
+          </div>
+        </div>
+      </div> 
+      <br><br> 
+
+      <div class="container">
+        <img src="img-05.jpg" alt="Avatar" class="image">
+        <div class="overlay">
+          <div class="text">
+              <h3>Item-3</h3>
+              <h3>Price:50$</h3>
+          </div>
+        </div>
+      </div> 
+      <br><br> 
+
+      <div class="container">
+        <img src="img-06.jpg" alt="Avatar" class="image">
+        <div class="overlay">
+          <div class="text">
+              <h3>Item-4</h3>
+              <h3>Price:50$</h3>
+          </div>
+        </div>
+      </div> 
+      <br><br> 
+    </div> 
+    <!--dinner-->
+<br><br>
+    <center><h1>Dinner items</h1></center><br>
+    <div class="allcontainer">
+      <div class="container">
+        <img src="dinner.jpg" alt="Avatar" class="image">
+        <div class="overlay">
+          <div class="text">
+              <h3>Item-1</h3>
+              <h3>Price:50$</h3>
+          </div>
+        </div>
+      </div>  
+
+<br><br>
+      <div class="container">
+        <img src="img-07.jpg" alt="Avatar" class="image">
+        <div class="overlay">
+          <div class="text">
+              <h3>Item-2</h3>
+              <h3>Price:50$</h3>
+          </div>
+        </div>
+      </div> 
+      <br><br> 
+
+      <div class="container">
+        <img src="img-08.jpg" alt="Avatar" class="image">
+        <div class="overlay">
+          <div class="text">
+              <h3>Item-3</h3>
+              <h3>Price:50$</h3>
+          </div>
+        </div>
+      </div> 
+      <br><br> 
+
+      <div class="container">
+        <img src="img-09.jpg" alt="Avatar" class="image">
+        <div class="overlay">
+          <div class="text">
+              <h3>Item-4</h3>
+              <h3>Price:50$</h3>
+          </div>
+        </div>
+      </div> 
+      <br><br> 
+    </div> 
+    <br><br>
+</body>
+</html>

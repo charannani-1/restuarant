@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+    <style>
+         @media (max-width:700px){
+            header li a{
+                font-size: 15px;
+                top: 15%;
+            }
+        }
+        .im1 .text1 h1{
+            position: absolute;
+            top: 30%;
+            left: 35%;
+            color: whitesmoke;
+            font-size: 90px;
+        }
+        @media (max-width:700px){
+            .im1 .text1 h1{
+                font-size: 45px;
+                top: 15%;
+            }
+        }
+        /* chef profile*/
+        .center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main{
+  height: 100vh;
+  justify-content: space-evenly;
+}
+
+.box{
+  width: 270px;
+  height: 285px;
+  box-shadow: 0 10px 20px rgba(0, 0,0.288);
+  border-radius: 23px;
+  flex-direction: column;
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+.box img{
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+
+}
+.user-name{
+  margin-bottom: 5px;
+  font-size: 2rem;
+  color: black;
+}
+
+ .icons{
+  font-size: 1.6rem;
+  margin-top: 10px;
+}
+.icons i{
+  color: rgb(85, 24, 24);
+  cursor: pointer;
+  margin-right: 10px;
+  transition: all 0.4s;
+}
+.icons i:hover{
+  color: rgb(85, 24, 24);
+  cursor: pointer;
+  margin-right: 10px;
+  transition: all 0.4s;
+  transform: rotate(360deg);
+}
+/*reviews*/
+.msg{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.msg fieldset{
+    width: 30%;
+    border-color: orange;
+}
+.msg fieldset:hover{
+    width: 32%;
+    border-color: orange;
+    box-shadow:  0 10px 20px rgba(0, 0,0.288);
+    transition: all 0.8s;
+}/*footer*/
+
+footer{
+  width: 100%;
+  height: 10rem;
+  background-color: #17181b;
+  color: whitesmoke;
+}
+footer ul {
+  display: flex;
+  justify-content: space-evenly;
+position: relative;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="im1">
+        <img src="all-bg.jpg" alt="" style="width: 100%;height: 82%;">
+<div class="text1">
+<center><h1>About</h1></center>
+</div>
+    </div>
+    
+    <div class="chef">
+<center><h1>Our Chefs</h1></center>
+<div class="chefim">
+<center><img src="chef.jpeg" alt="" style="width: 20%;height: 20%;"></center>
+<center>
+    <div class="cheftext">
+        <p style="width: 28%;">Our Chefs exploring the universe of unknownment. They have a heartful of love and  interest towards cooking.They will make your food very tasty.</p>
+        </div>
+</center>
+</div>
+
+<div class="main center">
+    <!--chef1-->
+<div class="box center">
+<img src="chef1.jpg" alt="">
+<div>
+    <p class="user-name">Evan Smith </p>
+    <center><p class="user-name">Chef </p></center>
+</div>
+
+<div class="icons">
+    <i class="fab fa-facebook-f "></i>
+    <i class="fab fa-instagram"></i>
+    <i class="fab fa-twitter"></i>
+</div>
+
+</div>
+
+ <!--chef2-->
+<div class="box center">
+    <img src="chef2.jpg" alt="">
+    <div>
+        <p class="user-name">Jhon</p>
+        <center><p class="user-name">Chef </p></center>
+    </div>
+    
+    <div class="icons">
+        <i class="fab fa-facebook-f "></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-twitter"></i>
+    </div>
+    
+    </div>
+
+<!--chef3-->
+    <div class="box center">
+        <img src="chef3.jpg" alt="">
+        <div>
+            <p class="user-name">Steve </p>
+            <center><p class="user-name">Chef </p></center>
+        </div>
+        
+        <div class="icons">
+            <i class="fab fa-facebook-f "></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-twitter"></i>
+        </div>
+        
+        </div>
+</div>
+</div>
+
+
+    <div class="review">
+
+    <center><h1><i class="fas fa-user-edit fa-1.6x"></i> Customer Reviews</h1></center>
+<div class="msg">
+    <!--review1-->
+    <fieldset>
+        <legend><img src="p1.jpg" alt="" style="width: 80px;height: 80px;border-radius: 50%;"></legend>
+        <h4>Amelia</h4>
+        <p>I visited this peoples's Restuarent as I have no other option. After having lunch there I felt it was amazing.</p>
+    </fieldset>
+ <!--review2-->
+    <fieldset>
+        <legend><img src="pq.jpg" alt="" style="width: 80px;height: 80px;border-radius: 50%;"></legend>
+        <h4>Sam</h4>
+        <p>What an amazing taste it has been. I cannot forget the taste of food in poples's Restaurant</p>
+    </fieldset>
+ <!--review3-->
+    <fieldset>
+        <legend><img src="p3.jpg" alt="" style="width: 80px;height: 80px;border-radius: 50%;"></legend>
+        <h4>Emma</h4>
+        <p>The tsate and ambiance of Restuarentis very good. A taste which must be experienced.</p>
+    </fieldset>
+</div>
+    </div>
+<br><br>
+<footer>
+    <center>copyright &copy; People's Restaurant 2021</center>
+    <br><br>
+    <ul>
+      <li style="list-style: none;"><a href=""><i class="fab fa-facebook-f fa-2x "></i></a></li>
+      <li style="list-style: none;"><a href=""><i class="fab fa-instagram fa-2x"></i></a></li>
+      <li style="list-style: none;"><a href=""><i class="fab fa-twitter fa-2x"></i></a></li>
+      <li style="list-style: none;"><a href=""><i class="fab fa-telegram-plane fa-2x"></i></a></li>
+      <li style="list-style: none;"><a href=""><i class="fab fa-google-plus-g fa-2x"></i></a></li>
+    </ul>
+    
+    </footer>
+</body>
+</html>
